@@ -1,0 +1,34 @@
+<div class="content-wrapper bg-white  " style="max-height: 80vh; height: 80vh;  overflow-y:auto;">
+  <div class="table-responsive">
+    <table class="table  text-center table-borderless table-hover">
+      <thead class=" position-sticky">
+        <tr>
+          <th>#</th>
+          <th>Item</th>
+          <th>Qnty</th>
+          <th>Unit Price</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let saleTrans of mockData; let i  = index">
+          <td scope="row">
+            {{i + 1}}
+          </td>
+          <td scope="">
+            {{saleTrans.itemName}}
+          </td>
+          <td>
+            {{saleTrans.qnty | number}}
+          </td>
+          <td>
+            {{saleTrans.uPrice | currency}}
+          </td>
+          <td>
+            {{saleTrans.totalPrice | currency}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

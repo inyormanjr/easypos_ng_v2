@@ -1,0 +1,57 @@
+<div class="content-wrapper flex-fill d-flex flex-column h-100">
+  <div class="container-fluid d-flex flex-column flex-fill">
+    <div class="pageheader p-4">
+      <h2 class="leading">Inventory Management</h2>
+    </div>
+    <div class="menu mb-3 mt-3 pl-3 pr-3 d-flex flex-row align-items-center justify-content-between">
+      <div class="search-area p-0 d-flex flex-row m-0 col">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Items" aria-label="Search Users"
+            aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="option col d-flex flex-row justify-content-end">
+        <a name="" id="" class="btn btn-warning" href="#" role="button">Stocks
+          <i class="ml-2 fa fa-cart-plus" aria-hidden="true"></i>
+        </a>
+          <a name="" id="" class="ml-1 btn btn-primary" href="#" role="button">Create
+            <i class="ml-2 fa fa-plus" aria-hidden="true"></i>
+          </a>
+      </div>
+    </div>
+    <div class="card flex-fill mb-5 mt-2">
+      <div class="container-fluid ">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">#</th>
+              <th scope="col" class="text-right">First</th>
+              <th scope="col" class="text-right">Last</th>
+              <th scope="col" class="text-right">Handle</th>
+              <th scope="col" class="text-right pr-5"> Options</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of listCount">
+              <th scope="row " class="text-center">1</th>
+              <td class="text-right">Mark</td>
+              <td class="text-right">Otto</td>
+              <td class="text-right">@mdo</td>
+              <td class="text-right pr-4">
+                <a name="" id="" class="btn btn-success" href="#" role="button">
+                  <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+                </a>
+                <a name="" id="" class=" ml-4 btn btn-danger" href="#" role="button">
+                  <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

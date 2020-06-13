@@ -1,0 +1,15 @@
+.card-text {
+  overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+#searchInput {
+  border: 1;
+  border-radius: 20px;
+}
+
+.container-fluid{
+  border-radius: 25px;
+  background-color: rgb(192, 187, 187, 0.2);
+}

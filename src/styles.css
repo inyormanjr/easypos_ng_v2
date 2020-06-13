@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+html, body {
+  background-color: #d6d6d6;
+  height: 100%;
+}
+
+.neomorph-bg {
+  background-color: #d6d6d6!important;
+}
+
+.card {
+ border-radius: 9px;
+background: #d6d6d6;
+box-shadow:  20px 20px 60px #b6b6b6,
+             -20px -20px 60px #f6f6f6;
+}
+
+
+.neomorph-container {
+border-radius: 9px;
+background: #d6d6d6;
+box-shadow:  20px 20px 60px #b6b6b6,
+             -20px -20px 60px #f6f6f6;
+}
