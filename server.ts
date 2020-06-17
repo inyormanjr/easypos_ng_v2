@@ -36,7 +36,6 @@ export function app() {
     console.log(req.baseUrl);
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
-
   server.use('/api/v1/auth', authRoute);
 
   return server;
