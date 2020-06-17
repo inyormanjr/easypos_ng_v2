@@ -9,7 +9,6 @@ import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
 import * as authRoute from '../ClientApp/db/routes/authRoutes';
-
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
   const server = express();
@@ -37,10 +36,8 @@ export function app() {
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
   server.use('/api/v1/auth', authRoute);
-
   return server;
 }
-
 function run() {
   const port = process.env.PORT || 4000;
 
